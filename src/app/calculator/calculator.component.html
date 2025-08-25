@@ -1,0 +1,21 @@
+
+<div class="block">
+<p>calculator works!</p>
+<h1>welcome to my calculatrice personalise</h1>
+<div> Premier nombre : {{ randomOne }} - <button (click)="generateOne()"> aleatoire</button>
+</div>
+<div> Deuxieme nombre : {{ randomTwo }} - <button (click)="generateTwo()"> aleatoire</button>
+</div>
+<div >
+    <h2>operation</h2>
+    <div class="gap">
+        <button (click)="addition(randomOne , randomTwo)"> addition</button>
+        <button (click)="soustraction(randomOne , randomTwo)"> soustration</button>
+        <button (click)="multipication(randomOne , randomTwo)"> multiplication</button>
+        <button (click)="division(randomOne , randomTwo)"> division</button>
+    </div>
+</div>
+<div>
+    <div>result: <span>{{result}}</span></div>
+</div>
+</div>
